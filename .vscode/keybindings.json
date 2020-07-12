@@ -1,0 +1,16 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "alt+t",
+    "command": "extension.translateLinesUnderCursorPreferred"
+  },
+  {
+    "key": "shift+alt+t",
+    "command": "extension.translateTextPreferred"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.extension.togglePreviewToSide",
+    "when": "!terminalFocus"
+  }
+]

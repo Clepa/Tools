@@ -1,0 +1,130 @@
+{
+  // VSC
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": -2,
+
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  /* "workbench.editor.enablePreviewFromCodeNavigation": true, */
+
+  "search.mode": "reuseEditor",
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 160,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [
+    80,
+    {
+      "column": 160,
+      "color": "#1500ff"
+    }
+  ],
+
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/node_modules": true
+    // "**/*.scss": true
+  },
+
+  // Extensions needed.
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // VSC: Languages
+  "[typescript]": {},
+  "[javascript]": {},
+  "[markdown]": {},
+
+  /* "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  } */
+
+  // EXTENSIONS
+  // General (language independent)
+  // aaronpowell.vscode-profile-switcher
+  // Shan.code-settings-sync
+  // funkyremi.vscode-google-translate
+  // alefragnani.bookmarks
+  // gruntfuggly.todo-tree
+  // Tyriar.sort-lines
+  // jrebocho.vscode-random
+  // johnpapa.vscode-peacock
+  // PKief.material-icon-theme
+  // nhoizey.gremlins
+  // anseki.vscode-color
+  // lihui.vs-color-picker
+  // General (languages)
+  // Web
+  // Angular
+  // Markdown
+  // GitHub
+  // Others
+  // Pending
+  // aaronpowell.vscode-profile-switcher
+  "profileSwitcher.profiles": ["Angular"],
+  "profileSwitcher.extensionsIgnore": [],
+  "profileSwitcher.storage": {
+    "Angular": {}
+  },
+  "profileSwitcher.extensions": {
+    "Angular": []
+  },
+  // funkyremi.vscode-google-translate
+  "vscodeGoogleTranslate.preferredLanguage": "es",
+  // nhoizey.gremlins
+  "gremlins.showInProblemPane": true,
+  // shd101wyy.markdown-preview-enhanced
+  "markdown-preview-enhanced.enableWikiLinkSyntax": false,
+  "markdown-preview-enhanced.mermaidTheme": "forest",
+  "markdown-preview-enhanced.enableScriptExecution": false,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  // gruntfuggly.todo-tree
+  "todo-tree.tree.scanMode": "workspace",
+  "todo-tree.general.statusBar": "tags",
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.showScanModeButton": true,
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "@CUSTOM"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "line",
+    "background": "#2A6407",
+    "opacity": 30,
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "foreground": "blue",
+      "icon": "alert",
+      "iconColour": "blue"
+    },
+    "FIXME": {
+      "foreground": "#DD6F00",
+      "iconColour": "#DD6F00"
+    },
+    "BUG": {
+      "foreground": "red",
+      "iconColour": "red"
+    },
+    "@CUSTOM": {
+      "icon": "beaker",
+      "iconColour": "black"
+    }
+  },
+  // anseki.vscode-color
+  "colorHelper.pickerForm": "default",
+  "colorHelper.resident": true,
+  "colorHelper.formatsOrder": [
+    ["hex", "rgb", "named", "hsb", "hsl", "hwb", "cmyk", "gray"]
+  ],
+  // mechatroner.rainbow-csv
+  "rainbow_csv.autodetect_separators": ["\t", ",", ";", "|", ">"]
+}
