@@ -1,0 +1,11 @@
+{
+  // Comment.
+  "b": 1,
+  "a": "Character a",
+  "d": {
+    "d1": "Child 1",
+    "d2": "Child 2"
+  },
+  "c": ["1", "2", "a"],
+  "aa": "Character a"
+}
