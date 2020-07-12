@@ -1,0 +1,22 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// Keybindings are user specific (no workspace), this file is a showcase: https://github.com/Microsoft/vscode/issues/4504#issuecomment-199359339.
+[
+  {
+    "key": "alt+t",
+    "command": "extension.translateLinesUnderCursorPreferred"
+  },
+  {
+    "key": "shift+alt+t",
+    "command": "extension.translateTextPreferred"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.extension.togglePreviewToSide",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "f9",
+    "command": "-sortLines.sortLines",
+    "when": "editorTextFocus"
+  }
+]
