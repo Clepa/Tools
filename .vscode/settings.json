@@ -1,0 +1,125 @@
+{
+  // VSC
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+
+  "window.zoomLevel": -2,
+
+  "workbench.colorTheme": "Default Light+",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  /* "workbench.editor.enablePreviewFromCodeNavigation": true, */
+
+  "search.mode": "reuseEditor",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": { "source.organizeImports": true },
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 160,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80, { "column": 120, "color": "#1500ff" }, { "column": 160, "color": "#ff0000" }],
+  "editor.linkedEditing": true, // Auto rename HTML tags.
+
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+
+  // VSC: languages
+  // "[typescript]": {},
+
+  // Extensions installed required.
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorCustomizations": {
+    "bookmarks.lineBackground": "#ebf61254"
+  },
+
+  // Extensions
+  // General (language independent)
+  // aaronpowell.vscode-profile-switcher: profileSwitcher
+  "profileSwitcher.profiles": ["Angular"],
+  "profileSwitcher.extensionsIgnore": [],
+  "profileSwitcher.storage": { "Angular": {} },
+  "profileSwitcher.extensions": { "Angular": [] },
+  // Shan.code-settings-sync: sync
+  // streetsidesoftware.code-spell-checker: cSpell
+  "cSpell.words": [],
+  "cSpell.enableFiletypes": [],
+  // funkyremi.vscode-google-translate: vscodeGoogleTranslate
+  "vscodeGoogleTranslate.preferredLanguage": "Spanish",
+  // alefragnani.bookmarks: bookmarks
+  "bookmarks.saveBookmarksInProject": true,
+  // gruntfuggly.todo-tree: todo-tree
+  "todo-tree.tree.scanMode": "workspace",
+  "todo-tree.general.statusBar": "tags",
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "CUSTOM"],
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "line",
+    "background": "#2a6407",
+    "opacity": 30,
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": { "foreground": "#0000ff", "icon": "alert", "iconColour": "#0000ff" },
+    "FIXME": { "foreground": "#dd6f00", "iconColour": "#dd6f00" },
+    "BUG": { "foreground": "#ff0000", "iconColour": "#ff0000" },
+    "CUSTOM": { "icon": "beaker", "iconColour": "#000000" }
+  },
+  // Tyriar.sort-lines: sortLines
+  // jrebocho.vscode-random: vscodeRandom
+  // johnpapa.vscode-peacock: peacock
+  // PKief.material-icon-theme: material-icon-theme
+  // nhoizey.gremlins: gremlins
+  "gremlins.showInProblemPane": true,
+  // anseki.vscode-color: colorHelper
+  "colorHelper.pickerForm": "default",
+  "colorHelper.resident": true,
+  "colorHelper.formatsOrder": [["hex", "rgb", "named", "hsb", "hsl", "hwb", "cmyk", "gray"]],
+  // lihui.vs-color-picker: vs-color-picker
+  // bierner.emojisense: emojisense
+  // General (languages)
+  // EditorConfig.EditorConfig: editorconfig
+  // esbenp.prettier-vscode: prettier
+  // SonarSource.sonarlint-vscode: sonarlint
+  // richie5um2.vscode-sort-json: sortJSON
+  "sortJSON.orderOverride": [],
+  // mechatroner.rainbow-csv: rainbow_csv
+  "rainbow_csv.autodetect_separators": [",", "\t", ";", " ", "|", "~", "^", ":", "=", ".", "-"],
+  // Web
+  // vscode-firefox-debug: firefox
+  // ChakrounAnas.turbo-console-log: turboConsoleLog
+  // wix.vscode-import-cost: importCost
+  // kisstkondoros.vscode-gutter-preview: gutterpreview
+  // Angular
+  // Angular.ng-template: -
+  // dbaeumer.vscode-eslint: eslint
+  // SimonTest.simontest: -
+  // johnpapa.angular2: -
+  // Markdown
+  // yzhang.markdown-all-in-one: markdown.extension
+  // shd101wyy.markdown-preview-enhanced: markdown-preview-enhanced
+  "markdown-preview-enhanced.enableWikiLinkSyntax": false,
+  "markdown-preview-enhanced.mermaidTheme": "forest",
+  "markdown-preview-enhanced.enableScriptExecution": false,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true
+  // davidanson.vscode-markdownlint: markdownlint
+  // Git
+  // eamodio.gitlens: gitlens
+  // GitHub.vscode-pull-request-github: githubPullRequests, githubIssues
+
+  // codezombiech.gitignore: gitignore
+  // Others
+  // quicktype.quicktype: quicktype
+  // zeithaste.cursorCharCode
+  // DougFinke.vscode-pandoc
+}
