@@ -1,3 +1,7 @@
+<!-- markdownlint-disable MD033 markdownlint-disable MD041-->
+<link rel="stylesheet" type="text/css" media="all" href="styles.css" />
+<!-- markdownlint-enable MD033 markdownlint-enable MD041 -->
+
 # Local environment <!-- omit in toc -->
 
 Guide to add the following applications without admin rights. One of the objectives of this guide is to put all the applications and its configurations into the same common folder to facilitate to do manual backups or move between computers.
@@ -20,13 +24,10 @@ Guide to add the following applications without admin rights. One of the objecti
     - [ConEmu](#conemu)
   - [Environment variables](#environment-variables)
 - [Easy go](#easy-go)
-- [Backup](#backup)
-- [What about...?](#what-about)
-  - [Chrome](#chrome)
 - [WIP](#wip)
   - [Tools and applications](#tools-and-applications)
 
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ## Manual configuration
 
@@ -76,13 +77,13 @@ Greenshot: https://github.com/greenshot/greenshot/blob/95c4ea5cbe03306dede1cce99
 ConEmu: https://github.com/Maximus5/ConEmu/blob/5d888d58e0201866b0121fbb266981b78f38a6c9/LICENSE.
 -->
 
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ### Setup
 
 First steps:
 
-- Create a new folder at `C:\`, e.g. `C:\Tools`, where to install all the applications and tools. This root folder can be different, and from now on known as: `%TOOLS%`. This value will be defined as environment variable, but be careful if you change this value because some applications can have absolute paths not depending of an environment variable and you have to adapt it.
+- Create a new folder at `C:\`, e.g. `C:\Tools`, where to install all the applications and tools. This root folder can be different, and from now on known as: `%TOOLS%`. This value will be defined as an environment variable ([environment variables](#environment-variables)), but be careful if you change the value because some applications do not support environment variables in paths, and you have to adapt it.
 - Inside this new folder, create two empty folders: `%TOOLS%\_config` and `%TOOLS%\_data`.
 - Create the next base structure:
 
@@ -136,7 +137,9 @@ First steps:
 
 #### Install
 
-To finish the install process, we should move the applications to the target folder. As a summary, the `.zip` and `.7z` files should be unzipped (without the root folder) in the target application `Current` folder. The `.exe` files have a specific configuration. A short description of the process for each:
+<!-- TODO: for Fiddler, move  INetC.dll file too? -->
+
+To finish the installation process, we should move the applications to the target folder. As a summary, the `.zip` and `.7z` files should be unzipped (without the root folder) in the target application `Current` folder. The `.exe` files have a specific configuration. A short description of the process for each:
 
 - Git (`PortableGit-2.31.1-64-bit.7z.exe`): unzip the `.exe` in `%TOOLS%\Git\Current` and run `post-install.bat`, or just run the `.exe` and move the extracted content to `%TOOLS%\Git\Current`.
 - Java (`OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9.zip`): unzip in `%TOOLS%\Java\OpenJDK\Current`.
@@ -144,19 +147,18 @@ To finish the install process, we should move the applications to the target fol
 - Node.js (`node-v14.17.0-win-x64.zip`): unzip in `%TOOLS%\Node.js\Current`.
 - Visual Studio Code (`VSCode-win32-x64-1.56.1.zip`): unzip in `%TOOLS%\VSCode\Current` and create `data` folder within Visual Studio Code folder. [Portable mode](https://code.visualstudio.com/docs/editor/portable).
 - IntelliJ Community (`ideaIC-2021.1.1.win.zip`): unzip in `%TOOLS%\JetBrains\IntelliJ\Current`.
-
   - Open `C:\Tools\JetBrains\IntelliJ\Current\bin\idea.properties` file, uncomment and change next properties:
-
+    <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
+    <!--  -->
     ```properties
     idea.config.path=${idea.home.path}/data/config
     idea.system.path=${idea.home.path}/data/system
     idea.plugins.path=${idea.home.path}/data/plugins
     idea.log.path=${idea.home.path}/data/log
     ```
-
+    <!--  -->
 - Git Extensions (`GitExtensions-Portable-3.5.0.11713-0a5ef9ca6.zip`): unzip in `%TOOLS%\GitExtensions\Current`.
-- Postman (`Postman-win64-8.4.0-Setup.exe`): run the `.exe` and when the install process finishes, move the content in `%LOCALAPPDATA%\Postman\app-8.4.0` to `%TOOLS%\Postman\Current`.
-<!-- TODO: move  INetC.dll file too? -->
+- Postman (`Postman-win64-8.4.0-Setup.exe`): run the `.exe` and when the installation process finishes, move the content in `%LOCALAPPDATA%\Postman\app-8.4.0` to `%TOOLS%\Postman\Current`.
 - Fiddler Classic (`FiddlerSetup.exe`): unzip the `.exe`, open unzipped folder `$PLUGINSDIR`, and unzip again the `.exe` in `%TOOLS%\Fiddler\Current`. [Details](https://stackoverflow.com/a/21756167).
 - Notepad++ (`npp.7.9.5.portable.x64.zip`): unzip in `%TOOLS%\Notepad++\Current`.
 - Greenshot (`Greenshot-NO-INSTALLER-1.2.10.6-RELEASE.zip`): unzip in `%TOOLS%\Greenshot\Current`.
@@ -236,13 +238,13 @@ To finish the install process, we should move the applications to the target fol
 
 :information_source: Is important to verify the structure to do not have problems with extra folder when unzipping. :information_source:
 
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ### Configuration
 
 #### Git
 
-- Create a new file: `%USERPROFILE%\.gitconfig` (open it if it exists).
+- Create a new file or open it if it exists: `%USERPROFILE%\.gitconfig`.
 - Recommended configuration. Update with your own information for, at least, `user.name` and `user.email`.
 
 ```ini
@@ -291,31 +293,31 @@ At the beginning of the file `%TOOLS%\ApacheMaven\Current\conf\settings.xml` add
 
 ##### NPM
 
-- Create a new file: `%TOOLS%\_config\.npmrc` (move from `%USERPROFILE%\.npmrc` if it exists).
+- Create a new file: `%TOOLS%\_config\.npmrc`, or move from `%USERPROFILE%\.npmrc` if it exists.
 - Add next properties:
+  <!--  -->
+  ```properties
+  prefix=${TOOLS}\_data\npm
+  cache=${TOOLS}\_data\npm\cache
+  tmp=${TOOLS}\_data\npm\tmp
+  ```
 
-```properties
-prefix=${TOOLS}\_data\npm
-cache=${TOOLS}\_data\npm\cache
-tmp=${TOOLS}\_data\npm\tmp
-```
-
-Install recommended packages
+Install recommended packages:
 
 - Install Angular: `npm i -g @angular/cli`.
 - Install Yarn: `npm i -g yarn`.
 
 ##### Yarn
 
-- Create a new file: `%USERPROFILE%\.yarnrc` (open it if it exists).
+- Create a new file or open it if it exists: `%USERPROFILE%\.yarnrc`.
 - Add next properties:
-
-```properties
-prefix "C:\\Tools\\_data\\Yarn"
-global-folder "C:\\Tools\\_data\\Yarn\\global"
-cache-folder "C:\\Tools\\_data\\Yarn\\cache"
-"--link-folder" "C:\\Tools\\_data\\Yarn\\link"
-```
+  <!--  -->
+  ```properties
+  prefix "C:\\Tools\\_data\\Yarn"
+  global-folder "C:\\Tools\\_data\\Yarn\\global"
+  cache-folder "C:\\Tools\\_data\\Yarn\\cache"
+  "--link-folder" "C:\\Tools\\_data\\Yarn\\link"
+  ```
 
 :warning: If you changed the `%TOOLS%` folder to a different one, update the paths too. :warning:
 
@@ -342,20 +344,20 @@ Configuration needed for applications to: properly work, can be used in command 
 - Configure environment variables
   - Add new user variables (or update):
     - Variable name: `TOOLS`, variable value: `C:\Tools`.
-    - Variable name: `JAVA_HOME`, variable value: `%%TOOLS%%\Java\OpenJDK\Current`.
-    - Variable name: `NPM_CONFIG_USERCONFIG`, variable value: `%%TOOLS%%\_config\.npmrc`.
+    - Variable name: `JAVA_HOME`, variable value: `%TOOLS%\Java\OpenJDK\Current`.
+    - Variable name: `NPM_CONFIG_USERCONFIG`, variable value: `%TOOLS%\_config\.npmrc`.
   - `PATH` variable:
-    - Double click on `PATH` (or create if it does not exist).
+    - Double-click on `PATH` (or create if it does not exist).
     - In the new window click on `Edit text...`.
-    - Add at the end: `%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Git\Current\cmd;%%TOOLS%%\Java\OpenJDK\Current\bin;%%TOOLS%%\Node.js\Current;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm`.
+    - Add at the end: `;%TOOLS%\ApacheMaven\Current\bin;%TOOLS%\Git\Current\cmd;%TOOLS%\Java\OpenJDK\Current\bin;%TOOLS%\Node.js\Current;%TOOLS%\VSCode\Current\bin;%TOOLS%\_data\npm;`.
 
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ## Easy go
 
-In the `.\Tools` all the applications are already configured with this setup.
+In the `.\Tools` folder (documentation root), all the applications are nearly fully configured with this setup and only needs some minor actions.
 
-:warning: Before running the script(s) read carefully the warn comments: :warning:
+:warning: Before running the script(s) read carefully next comments: :warning:
 
 - Run this at your own risk.
 - If some environment variables are already present in `PATH`, these will be duplicated and other variables with the same name will be overwritten.
@@ -363,42 +365,21 @@ In the `.\Tools` all the applications are already configured with this setup.
 
 Actions:
 
-- Copy the content in `.\Tools` (documentation root) to `C:\Tools`.
-- Run the script to create all the needed environment variables: `call .\Scripts\create_environment.cmd`.
-- Apply the steps defined in: [Git](#git), [Yarn](#yarn).
+- Copy the content in `.\Tools` to `C:\Tools`.
+- Run the script to create all the needed environment variables: `call .\Scripts\create_env_vars.cmd`.
+- Apply the steps defined in: [Git](#git) and [Yarn](#yarn).
 - In case that you have some existing configuration files, remove them, or move the content and then remove: `%USERPROFILE%\.m2\settings.xml`, `%USERPROFILE%\.npmrc`.
 
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
-
-## Backup
-
-_WIP_
-
-Backup of the `C:\Tools` folder.
-
-- Create .zip with all: applications, `_data` (optional) and config.
-- Configurable: add `_data`.
-- Copy Chrome bookmarks.
-
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
-
-## What about...?
-
-### Chrome
-
-You can manually copy the bookmarks when doing the backup or move the user data to the common folder:
-
-- <instructions...>
-
-The passwords should be manually exported: <instructions...>
-
-<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ## WIP
 
+- Explain why `Current` structure and empty folder with version.
+- Clean up the system: old configuration and programs.
 - Script to automatically download the _latest_ version of all the programs.
-- Clean up the system with old configuration and programs.
-- Why `Current` structure?
+- Backup of the `C:\Tools` folder.
+  - Create .zip with all: applications, `_data` (optional) and `_config`.
+  - Copy Chrome bookmarks.
 
 ### Tools and applications
 
@@ -406,17 +387,22 @@ The passwords should be manually exported: <instructions...>
 - [nvm](https://github.com/nvm-sh/nvm).
 - [Yarn 2+](https://yarnpkg.com/getting-started).
 - [MiKTeX](https://miktex.org/).
-
 - [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/download-app).
 - [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 - [SoapUI](https://www.soapui.org/tools/soapui/).
 - [Cmder](https://cmder.net/).
 - [Eclipse](https://www.eclipse.org/downloads/).
 
-<!--
-Verificar: carpeta de red. Sé que existe, pero he perdido la ruta...
- -->
+<!-- ### What about...?
 
-<!--
-D:\Users\Clepa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python\Python38\Scripts\;C:\Program Files\Python\Python38\;D:\Users\Clepa\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Users\Clepa\Downloads\prince-14.1-win64\bin;%TOOLS%\Git\Current\bin;%TOOLS%\Visual Studio Code\Current\bin;
- -->
+#### Chrome
+
+You can manually copy the bookmarks when doing the backup or move the user data to `%TOOLS%\_data` folder setting different user data directory creating a new shortcut:
+
+- Create a new `chrome.exe` shortcut on your desktop (`%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe`).
+  - Right click and go to properties.
+  - Change the target to: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\tools\_data\Chrome"`.
+- Open Chrome using the new shortcut:
+  - Check if the bookmarks and passwords have been added correctly.
+  - If something is missing, do it manually. Export from the old Chrome and import them into the new one. In some cases, To activate the import option for passwords add to the shortcut target: `--enable-features=PasswordImport`.
+- Hereinafter, use the new shortcut for using Chrome. -->
