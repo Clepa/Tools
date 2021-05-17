@@ -3,7 +3,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
 
   "workbench.colorTheme": "Default Light+",
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
 
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.colors": true,
@@ -126,5 +126,11 @@
     ["hex", "rgb", "named", "hsb", "hsl", "hwb", "cmyk", "gray"]
   ],
   // mechatroner.rainbow-csv
-  "rainbow_csv.autodetect_separators": ["\t", ",", ";", "|", ">"]
+  "rainbow_csv.autodetect_separators": ["\t", ",", ";", "|", ">"],
+
+  "markdown-pdf.convertOnSave": true,
+  "markdown-pdf.type": ["pdf", "html"],
+  /* "markdown-pdf.styles": ["LocalEnvironment/Docs/styles.css"], */
+  "markdown-pdf.headerTemplate": "<span></span>",
+  "markdown-pdf.footerTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='pageNumber'></div>"
 }
