@@ -18,16 +18,19 @@ echo ------ ONLY MODIFIED VARIABLES: NOT EXPANDED ------ >> %outputFile%
 echo( >> %outputFile%
 
 call :get_reg_value "PATH" 1
-set currentEnvPath=%result%
+set "currentEnvPath=%result%"
+
 call :get_reg_value "TOOLS" 1
 call :get_reg_value "JAVA_HOME" 1
+call :get_reg_value "NPM_CONFIG_USERCONFIG" 1
 
 rem Add or update variables.
 setx TOOLS "C:\Tools" > nul
-setx JAVA_HOME "%%TOOLS%%\JavaJDK\Current" > nul
+setx JAVA_HOME "%%TOOLS%%\Java\OpenJDK\Current" > nul
+setx NPM_CONFIG_USERCONFIG "%%TOOLS%%\_config\.npmrc" > nul
 
 rem if not ""=="%currentEnvPath%" ( echo Results: %result% ) else ( echo No results )
-setx PATH "%currentEnvPath%;%%TOOLS%%\JavaJDK\Current\bin;%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Node\Current;%%TOOLS%%\Git\Current\bin;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm" > nul
+setx PATH "%currentEnvPath%;%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Git\Current\cmd;%%TOOLS%%\Java\OpenJDK\Current\bin;%%TOOLS%%\Node.js\Current;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm" > nul
 
 exit /b 0
 
@@ -50,5 +53,4 @@ exit /b 0
   endlocal & set result=%val%
 
 rem cd D:\Users\Clepa\Google Drive\Personal\Programacio\Others\Tools\LocalEnvironment\Scripts
-
 rem PATH=D:\Users\Clepa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python\Python38\Scripts\;C:\Program Files\Python\Python38\;D:\Users\Clepa\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;

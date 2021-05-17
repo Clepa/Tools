@@ -16,3 +16,14 @@ pre > code > div {
   position: relative;
   top: 2px;
 }
+
+/* @media print {
+  @font-face {
+    font-family: Symbola;
+    src: url("D:/Users/Clepa/Google Drive/Personal/Programacio/Others/Tools/LocalEnvironment/Docs/symbola/Symbola.ttf");
+  }
+}
+
+body {
+  font-family: Symbola, sans-serif !important;
+} */
