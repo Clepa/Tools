@@ -368,6 +368,7 @@ Actions:
 - Copy the content in `.\Tools` to `C:\Tools`.
 - Run the script to create all the needed environment variables: `call .\Scripts\create_env_vars.cmd`.
 - Apply the steps defined in: [Git](#git) and [Yarn](#yarn).
+- Install the recommended packages defined in [NPM](#npm).
 - In case that you have some existing configuration files, remove them, or move the content and then remove: `%USERPROFILE%\.m2\settings.xml`, `%USERPROFILE%\.npmrc`.
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
