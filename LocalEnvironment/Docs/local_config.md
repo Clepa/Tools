@@ -153,8 +153,8 @@ To finish the installation process, we should move the applications to the targe
     ```properties
     idea.config.path=${idea.home.path}/data/config
     idea.system.path=${idea.home.path}/data/system
-    idea.plugins.path=${idea.home.path}/data/plugins
-    idea.log.path=${idea.home.path}/data/log
+    idea.plugins.path=${idea.config.path}/plugins
+    idea.log.path=${idea.system.path}/log
     ```
     <!--  -->
 - Git Extensions (`GitExtensions-Portable-3.5.0.11713-0a5ef9ca6.zip`): unzip in `%TOOLS%\GitExtensions\Current`.
@@ -280,7 +280,7 @@ To finish the installation process, we should move the applications to the targe
 
 #### Apache Maven
 
-At the beginning of the file `%TOOLS%\ApacheMaven\Current\conf\settings.xml` add the `localRepository`:
+In case that you have an existing user settings file, `%USERPROFILE%\.m2\settings.xml`, move to `%TOOLS%\ApacheMaven\Current\conf\settings.xml` and add the `localRepository`:
 
 ```xml
 <settings>
@@ -328,9 +328,9 @@ Open IntelliJ and apply basic configuration opening `Customize` > `All settings.
 - Go to `File | Settings | Build, Execution, Deployment | Build Tools | Maven | Importing`: at _JDK for importer_ select `Use JAVA_HOME`.
 - Go to `File | Settings | Build, Execution, Deployment | Build Tools | Maven` and update:
   - _Maven home path_: `C:\Tools\ApacheMaven\Current`.
-  - _User settings file_: `C:\Tools\ApacheMaven\Current\conf\settings.xml`.
-  - _Local repository_: `C:\Tools\_data\Maven\repository`.
-  - :warning: If you changed the `%TOOLS%` folder to a different one, update the paths. :warning:
+  - Verify that the _Local repository_ shows `C:\Tools\_data\Maven\repository`.
+
+:warning: If you changed the `%TOOLS%` folder to a different one, update the path. :warning:
 
 #### ConEmu
 
@@ -349,7 +349,7 @@ Configuration needed for applications to: properly work, can be used in command 
   - `PATH` variable:
     - Double-click on `PATH` (or create if it does not exist).
     - In the new window click on `Edit text...`.
-    - Add at the end: `;%TOOLS%\ApacheMaven\Current\bin;%TOOLS%\Git\Current\cmd;%TOOLS%\Java\OpenJDK\Current\bin;%TOOLS%\Node.js\Current;%TOOLS%\VSCode\Current\bin;%TOOLS%\_data\npm;`.
+    - Add at the end: `;%TOOLS%\ApacheMaven\Current\bin;%TOOLS%\Git\Current\cmd;%TOOLS%\Git\Current\bin;%TOOLS%\Java\OpenJDK\Current\bin;%TOOLS%\Node.js\Current;%TOOLS%\VSCode\Current\bin;%TOOLS%\_data\npm;%TOOLS%\_data\Yarn\bin;`.
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
@@ -369,12 +369,14 @@ Actions:
 - Run the script to create all the needed environment variables: `call .\Scripts\create_env_vars.cmd`.
 - Apply the steps defined in: [Git](#git) and [Yarn](#yarn).
 - Install the recommended packages defined in [NPM](#npm).
-- In case that you have some existing configuration files, remove them, or move the content and then remove: `%USERPROFILE%\.m2\settings.xml`, `%USERPROFILE%\.npmrc`.
+- In case that you have some existing configuration files, remove them, or move the content and then remove: `%USERPROFILE%\.m2\settings.xml` and `%USERPROFILE%\.npmrc`.
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
 ## WIP
 
+- Add token to work with GitHub.
+- User documents in network folder.
 - Explain why `Current` structure and empty folder with version.
 - Clean up the system: old configuration and programs.
 - Script to automatically download the _latest_ version of all the programs.

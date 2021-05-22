@@ -30,7 +30,7 @@ setx JAVA_HOME "%%TOOLS%%\Java\OpenJDK\Current" > nul
 setx NPM_CONFIG_USERCONFIG "%%TOOLS%%\_config\.npmrc" > nul
 
 rem if not ""=="%currentEnvPath%" ( echo Results: %result% ) else ( echo No results )
-setx PATH "%currentEnvPath%;%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Git\Current\cmd;%%TOOLS%%\Java\OpenJDK\Current\bin;%%TOOLS%%\Node.js\Current;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm;" > nul
+setx PATH "%currentEnvPath%;%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Git\Current\cmd;%%TOOLS%%\Git\Current\bin;%%TOOLS%%\Java\OpenJDK\Current\bin;%%TOOLS%%\Node.js\Current;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm;%%TOOLS%%\_data\Yarn\bin;" > nul
 
 exit /b 0
 
