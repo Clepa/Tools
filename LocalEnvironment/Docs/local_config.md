@@ -236,7 +236,7 @@ To finish the installation process, we should move the applications to the targe
 </table>
 <!-- markdownlint-enable MD033 -->
 
-:information_source: Is important to verify the structure to do not have problems with extra folder when unzipping. :information_source:
+:information_source: It is important to verify the structure to do not have problems with extra folder when unzipping. :information_source:
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
@@ -245,7 +245,7 @@ To finish the installation process, we should move the applications to the targe
 Environment variables needed for applications to: properly work, can be used in command line, be discoverable by others applications.
 
 - Open environment variables: `Win` + `R` > `cmd` > `rundll32.exe sysdm.cpl,EditEnvironmentVariables`.
-- Configure environment variables
+- Configure environment variables:
   - Add new user variables (or update):
     - Variable name: `TOOLS`, variable value: `C:\Tools`.
     - Variable name: `JAVA_HOME`, variable value: `%TOOLS%\Java\OpenJDK\Current`.
