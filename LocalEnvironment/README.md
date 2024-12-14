@@ -6,7 +6,5 @@ Project to configure a complete environment without admin rights and with the ob
 
 The content of each folder is:
 
-- Docs: how to add the applications as portable or without admin rights.
-- Downloads: downloaded applications and tools with `docs` version.
-- Scripts: automatization of some install processes.
-- Tools: programs configured and ready to start working, with only some minor needed configurations explained in `docs`.
+- `Docs`: how to add the applications as portable or without admin rights.
+- `Scripts`: automation of some installation processes.
