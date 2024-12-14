@@ -94,7 +94,7 @@
   // richie5um2.vscode-sort-json: sortJSON
   "sortJSON.orderOverride": [],
   // mechatroner.rainbow-csv: rainbow_csv
-  "rainbow_csv.autodetect_separators": [",", "\t", ";", " ", "|", "~", "^", ":", "=", ".", "-"],
+  "rainbow_csv.autodetect_separators": [",", "\t", ";", " ", "|", "~", "^", ":", "=", ".", "-", ">"],
   // Web
   // vscode-firefox-debug: firefox
   // ChakrounAnas.turbo-console-log: turboConsoleLog
@@ -111,7 +111,7 @@
   "markdown-preview-enhanced.enableWikiLinkSyntax": false,
   "markdown-preview-enhanced.mermaidTheme": "forest",
   "markdown-preview-enhanced.enableScriptExecution": false,
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   // davidanson.vscode-markdownlint: markdownlint
   // Git
   // eamodio.gitlens: gitlens
@@ -122,4 +122,11 @@
   // quicktype.quicktype: quicktype
   // zeithaste.cursorCharCode
   // DougFinke.vscode-pandoc
+
+  // TODO: to be moved to its correct place.
+  "markdown-pdf.convertOnSave": true,
+  "markdown-pdf.type": ["pdf", "html"],
+  /* "markdown-pdf.styles": ["LocalEnvironment/Docs/styles.css"], */
+  "markdown-pdf.headerTemplate": "<span></span>",
+  "markdown-pdf.footerTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='pageNumber'></div>"
 }
