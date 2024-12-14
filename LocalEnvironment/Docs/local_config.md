@@ -21,7 +21,7 @@ Guide to add the following applications without admin rights. One of the objecti
     - [Node.js](#nodejs)
       - [NPM](#npm)
       - [Yarn](#yarn)
-    - [IntelliJ Community](#intellij-community)
+    - [IntelliJ Ultimate](#intellij-ultimate)
     - [ConEmu](#conemu)
 - [Easy go](#easy-go)
 - [WIP](#wip)
@@ -222,7 +222,7 @@ To finish the installation process, we should move the applications to the targe
 
 ### Environment variables
 
-Environment variables needed for applications to: properly work, can be used in command line, be discoverable by others applications.
+Environment variables needed for applications to: properly work, can be used in command line, be discoverable by other applications.
 
 - Open environment variables: `Win` + `R` > `cmd` > `rundll32.exe sysdm.cpl,EditEnvironmentVariables`.
 - Configure environment variables:
@@ -233,7 +233,7 @@ Environment variables needed for applications to: properly work, can be used in 
   - `PATH` variable:
     - Double-click on `PATH` (or create if it does not exist).
     - In the new window click on `Edit text...`.
-    - Add at the end: `;%TOOLS%\ApacheMaven\Current\bin;%TOOLS%\Git\Current\cmd;%TOOLS%\Git\Current\bin;%TOOLS%\Java\OpenJDK\Current\bin;%TOOLS%\Node.js\Current;%TOOLS%\VSCode\Current\bin;%TOOLS%\_data\npm;%TOOLS%\_data\Yarn\bin;`.
+    - Add at the end: `%TOOLS%\_data\Yarn\bin;%TOOLS%\_data\npm;%TOOLS%\ApacheMaven\Current\bin;%TOOLS%\Git\Current\bin;%TOOLS%\Git\Current\cmd;%TOOLS%\Java\OpenJDK\Current\bin;%TOOLS%\Node.js\Current;%TOOLS%\Android\AndroidStudio\Current\bin;%TOOLS%\JetBrains\IntelliJ\Current\bin;%TOOLS%\JetBrains\PyCharm\Current\bin;%TOOLS%\JetBrains\WebStorm\Current\bin;%TOOLS%\JetBrains\Writerside\Current\bin;%TOOLS%\VSCode\Current\bin;%TOOLS%\LaTeX\MiKTeX\Current\texmfs\install\miktex\bin\x64;`.
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
 
@@ -245,10 +245,8 @@ Environment variables needed for applications to: properly work, can be used in 
 - Recommended configuration. Update with your own information for, at least, `user.name` and `user.email`.
 
 ```ini
-[credential]
-  helper = manager
-[http]
-  sslVerify = false
+[credential "helperselector"]
+  selected = manager
 [user]
   name = Example
   email = example@example.com
@@ -280,6 +278,7 @@ Environment variables needed for applications to: properly work, can be used in 
 In case that you have an existing user settings file, `%USERPROFILE%\.m2\settings.xml`, move to `%TOOLS%\ApacheMaven\Current\conf\settings.xml` and add the `localRepository`:
 
 ```xml
+<!-- -->
 <settings>
   <localRepository>${env.TOOLS}\_data\Maven\repository</localRepository>
   <!-- Existing configuration... -->
@@ -292,7 +291,6 @@ In case that you have an existing user settings file, `%USERPROFILE%\.m2\setting
 
 - Create a new file: `%TOOLS%\_config\.npmrc`, or move from `%USERPROFILE%\.npmrc` if it exists.
 - Add next properties:
-  <!--  -->
   ```properties
   prefix=${TOOLS}\_data\npm
   cache=${TOOLS}\_data\npm\cache
@@ -301,14 +299,13 @@ In case that you have an existing user settings file, `%USERPROFILE%\.m2\setting
 
 Install recommended packages:
 
-- Install Angular: `npm i -g @angular/cli`.
-- Install Yarn: `npm i -g yarn`.
+- Angular: `npm i -g @angular/cli`.
+- Yarn: `npm i -g yarn`.
 
 ##### Yarn
 
 - Create a new file or open it if it exists: `%USERPROFILE%\.yarnrc`.
 - Add next properties:
-  <!--  -->
   ```properties
   prefix="C:\\Tools\\_data\\Yarn"
   global-folder="C:\\Tools\\_data\\Yarn\\global"
@@ -318,7 +315,7 @@ Install recommended packages:
 
 :warning: If you changed the `%TOOLS%` folder to a different one, update the paths too. :warning:
 
-#### IntelliJ Community
+#### IntelliJ Ultimate
 
 Open IntelliJ and apply basic configuration opening `Customize` > `All settings...`:
 
@@ -337,8 +334,6 @@ When opening for the first time, select the ConEmu folder to save settings: `%TO
 
 ## Easy go
 
-In the `.\Tools` folder (documentation root), all the applications are nearly fully configured with this setup and only needs some minor actions.
-
 :warning: Before running the script(s) read carefully next comments: :warning:
 
 - Run this at your own risk.
@@ -347,8 +342,7 @@ In the `.\Tools` folder (documentation root), all the applications are nearly fu
 
 Actions:
 
-- Copy the content in `.\Tools` to `C:\Tools`.
-- Run the script to create all the needed environment variables: `call .\Scripts\create_env_vars.cmd`.
+- Run the script to create all the necessary environment variables: `call .\LocalEnvironment\Scripts\create_env_vars.cmd`.
 - Apply the steps defined in: [Git](#git) and [Yarn](#yarn).
 - Install the recommended packages defined in [NPM](#npm).
 - In case that you have some existing configuration files, remove them, or move the content and then remove: `%USERPROFILE%\.m2\settings.xml` and `%USERPROFILE%\.npmrc`.
@@ -372,7 +366,6 @@ Actions:
 - [nvm](https://github.com/nvm-sh/nvm).
 - [Yarn 2+](https://yarnpkg.com/getting-started).
 - [MiKTeX](https://miktex.org/).
-- [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/download-app).
 - [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 - [SoapUI](https://www.soapui.org/tools/soapui/).
 - [Cmder](https://cmder.net/).
