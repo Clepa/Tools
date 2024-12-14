@@ -1,6 +1,8 @@
 @echo off
 
-rem Run using: call create_environment.cmd
+rem Run with:
+rem CMD: call create_env_vars.cmd
+rem Git Bash: ./create_env_vars.cmd
 
 setlocal enabledelayedexpansion
 
@@ -16,9 +18,6 @@ set >> %outputFile%
 echo( >> %outputFile%
 echo ------ ONLY MODIFIED VARIABLES: NOT EXPANDED ------ >> %outputFile%
 echo( >> %outputFile%
-
-call :get_reg_value "PATH" 1
-set "currentEnvPath=%result%"
 
 set "tools=TOOLS"
 rem Not Expanded Tools value.
@@ -37,9 +36,13 @@ rem PATH user environment variable has a default limit size of 1024 characters (
 rem In case you see the warning message: "WARNING: The data being saved is truncated to 1024 characters.".
 rem Consider setting only the mandatory ones.
 rem Mandatory:
+call :get_reg_value "PATH" 1
+set "currentEnvPath=%result%"
 setx PATH "%currentEnvPath%;%neTools%\_data\Yarn\bin;%neTools%\_data\npm;%neTools%\ApacheMaven\Current\bin;%neTools%\Git\Current\bin;%neTools%\Git\Current\cmd;%neTools%\Java\OpenJDK\Current\bin;%neTools%\Node.js\Current;" > nul
 
 rem Optional:
+call :get_reg_value "PATH" 1
+set "currentEnvPath=%result%"
 setx PATH "%currentEnvPath%;%neTools%\Android\AndroidStudio\Current\bin;%neTools%\JetBrains\IntelliJ\Current\bin;%neTools%\JetBrains\PyCharm\Current\bin;%neTools%\JetBrains\WebStorm\Current\bin;%neTools%\JetBrains\Writerside\Current\bin;%neTools%\VSCode\Current\bin;%neTools%\LaTeX\MiKTeX\Current\texmfs\install\miktex\bin\x64;" > nul
 
 exit /b 0
