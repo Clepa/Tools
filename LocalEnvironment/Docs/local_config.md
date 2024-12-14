@@ -39,42 +39,42 @@ Download these tools and applications.
 
 #### Tools
 
-| Tool         | Version                                                                                                                                                | Download                                         | License                                                            |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------ |
-| Git          | [2.31.1](https://github.com/git-for-windows/git/releases/download/v2.31.1.windows.1/PortableGit-2.31.1-64-bit.7z.exe)                                  | [Source](https://git-scm.com/download/win)       | [Source](https://github.com/git/git/blob/v2.31.1/COPYING)          |
-| Java         | [jdk-11.0.11+9](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9/OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9.zip) | [Source](https://adoptopenjdk.net/releases.html) | [Source](https://adoptopenjdk.net/about.html)                      |
-| Apache Maven | [3.8.1](https://ftp.cixug.es/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip)                                                           | [Source](https://maven.apache.org/download.cgi)  | [Source](https://github.com/apache/maven/blob/maven-3.8.1/LICENSE) |
-| Node.js      | [14.17.0](https://nodejs.org/dist/v14.17.0/node-v14.17.0-win-x64.zip)                                                                                  | [Source](https://nodejs.org/en/download/)        | [Source](https://github.com/nodejs/node/blob/v14.17.0/LICENSE)     |
+| Tool         | Version                                                                                                                                            | Download                                                   | License                                                            |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------|
+| Git          | [2.47.1](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/PortableGit-2.47.1-64-bit.7z.exe)                              | [Source](https://git-scm.com/download/win)                 | [Source](https://github.com/git/git/blob/v2.47.1/COPYING)          |
+| Java         | [jdk-23.0.1+11](https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-jdk_x64_windows_hotspot_23.0.1_11.zip) | [Source](https://adoptium.net/temurin/releases/)           | [Source](https://adoptium.net/about/)                              |
+| Apache Maven | [3.9.9](https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip)                                                          | [Source](https://maven.apache.org/download.cgi)            | [Source](https://github.com/apache/maven/blob/maven-3.9.9/LICENSE) |
+| Node.js      | [23.4.0](https://nodejs.org/dist/v23.4.0/node-v23.4.0-win-x64.zip)                                                                                 | [Source](https://nodejs.org/en/download/prebuilt-binaries) | [Source](https://github.com/nodejs/node/blob/v23.4.0/LICENSE)      |
 
 <!--
-Git: https://github.com/git/git/blob/48bf2fa8bad054d66bd79c6ba903c89c704201f7/COPYING.
+Git: https://github.com/git/git/blob/92999a42db1c5f43f330e4f2bca4026b5b81576f/COPYING.
 Java: <not found>.
-Apache Maven: https://github.com/apache/maven/blob/05c21c65bdfed0f71a2f2ada8b84da59348c4c5d/LICENSE.
-Node.js: https://github.com/nodejs/node/blob/aa15690b6446c56f36292d38ef064c095a374ba7/LICENSE.
+Apache Maven: https://github.com/apache/maven/blob/8e8579a9e76f7d015ee5ec7bfcdc97d260186937/LICENSE.
+Node.js: https://github.com/nodejs/node/blob/e8cf3a6a972fb074411c6ce504e2d43a74ac2dff/LICENSE.
 -->
 
 #### Applications
 
-| Application        | Version                                                                                                                                     | Download                                                                    | License                                                                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Visual Studio Code | [1.56.1](https://az764295.vo.msecnd.net/stable/e713fe9b05fc24facbec8f34fb1017133858842b/VSCode-win32-x64-1.56.1.zip)                        | [Source](https://code.visualstudio.com/Download)                            | [Source](https://github.com/microsoft/vscode/blob/1.56.1/LICENSE.txt)                |
-| IntelliJ Community | [2021.1.1](https://download.jetbrains.com/idea/ideaIC-2021.1.1.win.zip)                                                                     | [Source](https://www.jetbrains.com/idea/download/#section=windows)          | [Source](https://github.com/JetBrains/intellij-community/blob/211.7142/LICENSE.txt)  |
-| Git Extensions     | [3.5](https://github.com/gitextensions/gitextensions/releases/download/v3.5/GitExtensions-Portable-3.5.0.11713-0a5ef9ca6.zip)               | [Source](https://github.com/gitextensions/gitextensions/releases)           | [Source](https://github.com/gitextensions/gitextensions/blob/v3.4.3/LICENSE.md)      |
-| Postman            | [8.4.0](https://dl.pstmn.io/download/version/8.4.0/win64)                                                                                   | [Source](https://www.postman.com/downloads/)                                | [Source](https://www.postman.com/legal/eula/)                                        |
-| Fiddler Classic    | `5.0.20204.45441`. [Latest](https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe)                                              | [Source](https://www.telerik.com/support/whats-new/fiddler/release-history) | [Source](https://www.telerik.com/purchase/license-agreement/fiddler)                 |
-| Notepad++          | [7.9.5](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.9.5/npp.7.9.5.portable.x64.zip)                         | [Source](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)   | [Source](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/v7.9.5/LICENSE) |
-| Greenshot          | [1.2.10.6](https://github.com/greenshot/greenshot/releases/download/Greenshot-RELEASE-1.2.10.6/Greenshot-NO-INSTALLER-1.2.10.6-RELEASE.zip) | [Source](https://github.com/greenshot/greenshot/releases)                   | [Source](https://github.com/greenshot/greenshot/blob/release/1.3/LICENSE)            |
-| ConEmu             | [21.04.22](https://github.com/Maximus5/ConEmu/releases/download/v21.04.22/ConEmuPack.210422.7z)                                             | [Source](https://github.com/Maximus5/ConEmu/releases)                       | [Source](https://github.com/Maximus5/ConEmu/blob/v21.04.22/LICENSE)                  |
+| Application        | Version                                                                                                                                           | Download                                                                    | License                                                                              |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Visual Studio Code | [1.96.0](https://vscode.download.prss.microsoft.com/dbazure/download/stable/138f619c86f1199955d53b4166bef66ef252935c/VSCode-win32-x64-1.96.0.zip) | [Source](https://code.visualstudio.com/Download)                            | [Source](https://github.com/microsoft/vscode/blob/1.96.0/LICENSE.txt)                |
+| IntelliJ Ultimate  | [2024.3.1](https://download.jetbrains.com/idea/ideaIU-2024.3.1.win.zip)                                                                           | [Source](https://www.jetbrains.com/idea/download/?section=windows)          | [Source](https://www.jetbrains.com/store/comparison.html#LicenseComparison)          |
+| Git Extensions     | [5.1.1](https://github.com/gitextensions/gitextensions/releases/download/v5.1.1/GitExtensions-Portable-x64-5.1.1.17970-939c0edba.zip)             | [Source](https://github.com/gitextensions/gitextensions/releases)           | [Source](https://github.com/gitextensions/gitextensions/blob/v5.1.1/LICENSE.md)      |
+| Postman            | [8.4.0](https://dl.pstmn.io/download/version/8.4.0/win64)                                                                                         | [Source](https://www.postman.com/downloads/)                                | [Source](https://www.postman.com/legal/eula/)                                        |
+| Fiddler Classic    | `5.0.20245.10105`. [Latest](https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe)                                                    | [Source](https://www.telerik.com/support/whats-new/fiddler/release-history) | [Source](https://www.telerik.com/purchase/license-agreement/fiddler)                 |
+| Notepad++          | [8.7.4](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.4/npp.8.7.4.portable.x64.zip)                               | [Source](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)   | [Source](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/v8.7.4/LICENSE) |
+| Greenshot          | [1.2.10.6](https://github.com/greenshot/greenshot/releases/download/Greenshot-RELEASE-1.2.10.6/Greenshot-NO-INSTALLER-1.2.10.6-RELEASE.zip)       | [Source](https://github.com/greenshot/greenshot/releases)                   | [Source](https://github.com/greenshot/greenshot/blob/release/1.3/LICENSE)            |
+| ConEmu             | [23.07.24](https://github.com/Maximus5/ConEmu/releases/download/v23.07.24/ConEmuPack.230724.7z)                                                   | [Source](https://github.com/Maximus5/ConEmu/releases)                       | [Source](https://github.com/Maximus5/ConEmu/blob/v23.07.24/LICENSE)                  |
 
 <!--
-Visual Studio Code: https://github.com/microsoft/vscode/blob/e713fe9b05fc24facbec8f34fb1017133858842b/LICENSE.txt, https://code.visualstudio.com/license.
-IntelliJ: https://github.com/JetBrains/intellij-community/blob/0aec28c9b6fefa4cab5a0586b87de6d49b16f507/LICENSE.txt, https://www.jetbrains.com/opensource/idea/, https://www.jetbrains.com/idea/features/editions_comparison_matrix.html, https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000698770/comments/115000584024.
-Git Extensions: https://github.com/gitextensions/gitextensions/blob/0a5ef9ca6ce87754a510aa02c7a96d8b915714ac/LICENSE.md.
+Visual Studio Code: https://github.com/microsoft/vscode/blob/138f619c86f1199955d53b4166bef66ef252935c/LICENSE.txt, https://code.visualstudio.com/license.
+IntelliJ: https://www.jetbrains.com/store/comparison.html#LicenseComparison, https://www.jetbrains.com/opensource/idea/, https://www.jetbrains.com/products/compare/?product=idea&product=idea-ce, https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000698770-Commercial-use-IntelliJ-IDEA-Community-Edition.
+Git Extensions: https://github.com/gitextensions/gitextensions/blob/939c0edba68f0c15b8e5180ca06a92c5ce534501/LICENSE.md.
 Postman: https://support.postman.com/hc/en-us/articles/360003675853-Commercial-Use-Restrictions.
 Fiddler Classic: <not found>.
-Notepad++: https://github.com/notepad-plus-plus/notepad-plus-plus/blob/4399c1343b96aee0c5419f130ddd984dc86f02d7/LICENSE.
+Notepad++: https://github.com/notepad-plus-plus/notepad-plus-plus/blob/b3110cdccfc3450eaab9d7cc554067384b3a2cfc/LICENSE.
 Greenshot: https://github.com/greenshot/greenshot/blob/95c4ea5cbe03306dede1cce993d43187bb7e0e0a/LICENSE, https://getgreenshot.org/faq/do-i-have-to-pay-for-using-greenshot/.
-ConEmu: https://github.com/Maximus5/ConEmu/blob/5d888d58e0201866b0121fbb266981b78f38a6c9/LICENSE.
+ConEmu: https://github.com/Maximus5/ConEmu/blob/90f76807d5e1862f670a65273f8d5ffc6693b4d3/LICENSE.
 -->
 
 <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
@@ -83,7 +83,7 @@ ConEmu: https://github.com/Maximus5/ConEmu/blob/5d888d58e0201866b0121fbb266981b7
 
 First steps:
 
-- Create a new folder at `C:\`, e.g. `C:\Tools`, where to install all the applications and tools. This root folder can be different, and from now on known as: `%TOOLS%`. This value will be defined as an environment variable ([environment variables](#environment-variables)), but be careful if you change the value because some applications do not support environment variables in paths, and you have to adapt it.
+- Create a new folder at `C:\`, e.g. `C:\Tools`, where to install all the applications and tools. This root folder can be different, and from now on known as: `%TOOLS%`. This value will be defined as an environment variable ([environment variables](#environment-variables)), but be careful if you change the value to something else because some applications do not support environment variables in paths, and you have to adapt it.
 - Inside this new folder, create two empty folders: `%TOOLS%\_config` and `%TOOLS%\_data`.
 - Create the next base structure:
 
@@ -141,14 +141,16 @@ First steps:
 
 To finish the installation process, we should move the applications to the target folder. As a summary, the `.zip` and `.7z` files should be unzipped (without the root folder) in the target application `Current` folder. The `.exe` files have a specific configuration. A short description of the process for each:
 
-- Git (`PortableGit-2.31.1-64-bit.7z.exe`): unzip the `.exe` in `%TOOLS%\Git\Current` and run `post-install.bat`, or just run the `.exe` and move the extracted content to `%TOOLS%\Git\Current`.
-- Java (`OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9.zip`): unzip in `%TOOLS%\Java\OpenJDK\Current`.
-- Apache Maven (`apache-maven-3.8.1-bin.zip`): unzip in `%TOOLS%\ApacheMaven\Current`.
-- Node.js (`node-v14.17.0-win-x64.zip`): unzip in `%TOOLS%\Node.js\Current`.
-- Visual Studio Code (`VSCode-win32-x64-1.56.1.zip`): unzip in `%TOOLS%\VSCode\Current` and create `data` folder within Visual Studio Code folder. [Portable mode](https://code.visualstudio.com/docs/editor/portable).
-- IntelliJ Community (`ideaIC-2021.1.1.win.zip`): unzip in `%TOOLS%\JetBrains\IntelliJ\Current`.
-  - Open `C:\Tools\JetBrains\IntelliJ\Current\bin\idea.properties` file, uncomment and change next properties:
-    <!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
+- Git: unzip the `.exe` in `%TOOLS%\Git\Current` and run `post-install.bat`, or just run the `.exe` and move the extracted content to `%TOOLS%\Git\Current`.
+- Java OpenJDK: unzip in `%TOOLS%\Java\OpenJDK\Current`.
+- Apache Maven: unzip in `%TOOLS%\ApacheMaven\Current`.
+- Node.js: unzip in `%TOOLS%\Node.js\Current`.
+- Visual Studio Code: unzip in `%TOOLS%\VSCode\Current` and create `data` folder within Visual Studio Code folder. [Portable mode](https://code.visualstudio.com/docs/editor/portable).
+
+<!-- markdownlint-disable MD033 --><div style="page-break-after: always;"></div><!-- markdownlint-enable MD033 -->
+
+- IntelliJ Ultimate: unzip in `%TOOLS%\JetBrains\IntelliJ\Current`.
+  - Open `%TOOLS%\JetBrains\IntelliJ\Current\bin\idea.properties` file, uncomment and change next properties:
     <!--  -->
     ```properties
     idea.config.path=${idea.home.path}/data/config
@@ -157,12 +159,12 @@ To finish the installation process, we should move the applications to the targe
     idea.log.path=${idea.system.path}/log
     ```
     <!--  -->
-- Git Extensions (`GitExtensions-Portable-3.5.0.11713-0a5ef9ca6.zip`): unzip in `%TOOLS%\GitExtensions\Current`.
-- Postman (`Postman-win64-8.4.0-Setup.exe`): run the `.exe` and when the installation process finishes, move the content in `%LOCALAPPDATA%\Postman\app-8.4.0` to `%TOOLS%\Postman\Current`.
+- Git Extensions: unzip in `%TOOLS%\GitExtensions\Current`.
+- Postman: run the `.exe` and when the installation process finishes, move the content in `%LOCALAPPDATA%\Postman\<version>` to `%TOOLS%\Postman\Current`.
 - Fiddler Classic (`FiddlerSetup.exe`): unzip the `.exe`, open unzipped folder `$PLUGINSDIR`, and unzip again the `.exe` in `%TOOLS%\Fiddler\Current`. [Details](https://stackoverflow.com/a/21756167).
-- Notepad++ (`npp.7.9.5.portable.x64.zip`): unzip in `%TOOLS%\Notepad++\Current`.
-- Greenshot (`Greenshot-NO-INSTALLER-1.2.10.6-RELEASE.zip`): unzip in `%TOOLS%\Greenshot\Current`.
-- ConEmu (`ConEmuPack.210422.7z`): unzip in `%TOOLS%\ConEmu\Current`. Also included in Git Extensions. [Portable instructions](https://conemu.github.io/en/ConEmuXml.html#search-sequence), [7-Zip package](https://conemu.github.io/en/VersionComparison.html#7-zip-package) and [FAQ](https://conemu.github.io/en/FAQ-3.html#q-3-1).
+- Notepad++: unzip in `%TOOLS%\Notepad++\Current`.
+- Greenshot: unzip in `%TOOLS%\Greenshot\Current`.
+- ConEmu: unzip in `%TOOLS%\ConEmu\Current`. [Portable instructions](https://conemu.github.io/en/ConEmuXml.html#search-sequence), [7-Zip package](https://conemu.github.io/en/VersionComparison.html#7-zip-package) and [FAQ](https://conemu.github.io/en/FAQ-3.html#q-3-1).
 
 <!-- markdownlint-disable MD033 -->
 <table style="margin-left: auto; margin-right: auto;">
