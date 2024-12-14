@@ -303,7 +303,7 @@ In case that you have an existing user settings file, `%USERPROFILE%\.m2\setting
 <settings>
   <localRepository>${env.TOOLS}\_data\Maven\repository</localRepository>
   <!-- Existing configuration... -->
-<settings>
+</settings>
 ```
 
 #### Node.js
@@ -330,10 +330,10 @@ Install recommended packages:
 - Add next properties:
   <!--  -->
   ```properties
-  prefix "C:\\Tools\\_data\\Yarn"
-  global-folder "C:\\Tools\\_data\\Yarn\\global"
-  cache-folder "C:\\Tools\\_data\\Yarn\\cache"
-  "--link-folder" "C:\\Tools\\_data\\Yarn\\link"
+  prefix="C:\\Tools\\_data\\Yarn"
+  global-folder="C:\\Tools\\_data\\Yarn\\global"
+  cache-folder="C:\\Tools\\_data\\Yarn\\cache"
+  "--link-folder"="C:\\Tools\\_data\\Yarn\\link"
   ```
 
 :warning: If you changed the `%TOOLS%` folder to a different one, update the paths too. :warning:
