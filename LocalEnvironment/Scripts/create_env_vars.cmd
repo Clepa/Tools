@@ -20,17 +20,27 @@ echo( >> %outputFile%
 call :get_reg_value "PATH" 1
 set "currentEnvPath=%result%"
 
-call :get_reg_value "TOOLS" 1
+set "tools=TOOLS"
+rem Not Expanded Tools value.
+set "neTools=%%%tools%%%"
+
+call :get_reg_value "%tools%" 1
 call :get_reg_value "JAVA_HOME" 1
 call :get_reg_value "NPM_CONFIG_USERCONFIG" 1
 
 rem Add or update variables.
 setx TOOLS "C:\Tools" > nul
-setx JAVA_HOME "%%TOOLS%%\Java\OpenJDK\Current" > nul
-setx NPM_CONFIG_USERCONFIG "%%TOOLS%%\_config\.npmrc" > nul
+setx JAVA_HOME "%neTools%\Java\OpenJDK\Current" > nul
+setx NPM_CONFIG_USERCONFIG "%neTools%\_config\.npmrc" > nul
 
-rem if not ""=="%currentEnvPath%" ( echo Results: %result% ) else ( echo No results )
-setx PATH "%currentEnvPath%;%%TOOLS%%\ApacheMaven\Current\bin;%%TOOLS%%\Git\Current\cmd;%%TOOLS%%\Git\Current\bin;%%TOOLS%%\Java\OpenJDK\Current\bin;%%TOOLS%%\Node.js\Current;%%TOOLS%%\VSCode\Current\bin;%%TOOLS%%\_data\npm;%%TOOLS%%\_data\Yarn\bin;" > nul
+rem PATH user environment variable has a default limit size of 1024 characters (without changing registry).
+rem In case you see the warning message: "WARNING: The data being saved is truncated to 1024 characters.".
+rem Consider setting only the mandatory ones.
+rem Mandatory:
+setx PATH "%currentEnvPath%;%neTools%\_data\Yarn\bin;%neTools%\_data\npm;%neTools%\ApacheMaven\Current\bin;%neTools%\Git\Current\bin;%neTools%\Git\Current\cmd;%neTools%\Java\OpenJDK\Current\bin;%neTools%\Node.js\Current;" > nul
+
+rem Optional:
+setx PATH "%currentEnvPath%;%neTools%\Android\AndroidStudio\Current\bin;%neTools%\JetBrains\IntelliJ\Current\bin;%neTools%\JetBrains\PyCharm\Current\bin;%neTools%\JetBrains\WebStorm\Current\bin;%neTools%\JetBrains\Writerside\Current\bin;%neTools%\VSCode\Current\bin;%neTools%\LaTeX\MiKTeX\Current\texmfs\install\miktex\bin\x64;" > nul
 
 exit /b 0
 
@@ -51,6 +61,3 @@ exit /b 0
   del %tmp_name%
 
   endlocal & set result=%val%
-
-rem cd D:\Users\Clepa\Google Drive\Personal\Programacio\Others\Tools\LocalEnvironment\Scripts
-rem PATH=D:\Users\Clepa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python\Python38\Scripts\;C:\Program Files\Python\Python38\;D:\Users\Clepa\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;
