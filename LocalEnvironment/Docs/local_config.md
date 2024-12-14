@@ -379,7 +379,7 @@ Actions:
 
 - Add token to work with GitHub.
 - User documents in network folder.
-- Explain why `Current` structure and empty folder with version.
+- Explain why `Current` structure and empty folder with version number.
 - Clean up the system: old configuration and programs.
 - Script to automatically download the _latest_ version of all the programs.
 - Backup of the `C:\Tools` folder.
@@ -398,7 +398,8 @@ Actions:
 - [Cmder](https://cmder.net/).
 - [Eclipse](https://www.eclipse.org/downloads/).
 
-<!-- ### What about...?
+<!--
+### What about...?
 
 #### Chrome
 
@@ -409,5 +410,6 @@ You can manually copy the bookmarks when doing the backup or move the user data 
   - Change the target to: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:\tools\_data\Chrome"`.
 - Open Chrome using the new shortcut:
   - Check if the bookmarks and passwords have been added correctly.
-  - If something is missing, do it manually. Export from the old Chrome and import them into the new one. In some cases, To activate the import option for passwords add to the shortcut target: `--enable-features=PasswordImport`.
-- Hereinafter, use the new shortcut for using Chrome. -->
+  - If something is missing, do it manually. Export from the old Chrome and import them into the new one. In some cases, to activate the import option for passwords, add to the shortcut target: `--enable-features=PasswordImport`.
+- Hereinafter, use the new shortcut for using Chrome.
+-->
