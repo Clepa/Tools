@@ -183,24 +183,14 @@ To finish the installation process, we should move the applications to the targe
  ┃ ┃ ┗ 📂boot
  ┣ 📂ConEmu
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂ConEmu
- ┃ ┃ ┗ 📂plugins
  ┣ 📂Fiddler
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂$PLUGINSDIR
- ┃ ┃ ┗ 📂ImportExport
  ┣ 📂Git
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂bin
- ┃ ┃ ┗ 📂cmd
  ┣ 📂GitExtensions
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂ConEmu
- ┃ ┃ ┗ 📂cs
  ┣ 📂Greenshot
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂Languages
- ┃ ┃ ┗ 📂Plugins
       </pre>
     </td>
     <td>
@@ -209,29 +199,17 @@ To finish the installation process, we should move the applications to the targe
  ┣ 📂Java
  ┃ ┗ 📂OpenJDK
  ┃ ┃ ┗ 📂Current
- ┃ ┃ ┃ ┣ 📂bin
- ┃ ┃ ┃ ┗ 📂conf
  ┣ 📂JetBrains
  ┃ ┗ 📂IntelliJ
  ┃ ┃ ┗ 📂Current
- ┃ ┃ ┃ ┣ 📂bin
- ┃ ┃ ┃ ┗ 📂jbr
  ┣ 📂Node.js
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂node_modules
- ┃ ┃ ┗ 📜CHANGELOG.md
  ┣ 📂Notepad++
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂autoCompletion
- ┃ ┃ ┗ 📂functionList
  ┣ 📂Postman
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂locales
- ┃ ┃ ┗ 📂resources
  ┗ 📂VSCode
  ┃ ┗ 📂Current
- ┃ ┃ ┣ 📂bin
- ┃ ┃ ┗ 📂data
       </pre>
     </td>
   </tr>
